@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的野蛮婆婆2-剧情解析与经典人物回顾专题</title>
+    <meta name="description" content="我的野蛮婆婆2专题页面，汇聚剧情梗概、经典人物关系、幕后花絮与观众热议话题，带你重温这部家庭喜剧的精彩看点。">
+    <meta name="keywords" content="我的野蛮婆婆2,港剧,家庭喜剧,剧情介绍,演员阵容,经典对白,剧集回顾">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #faf6f0;
+            color: #3a2e2a;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #7a1f1f;
+            background: linear-gradient(135deg, #6b1616 0%, #8e2929 100%);
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .logo-text small {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            opacity: 0.85;
+        }
+        .header-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+        .header-nav a {
+            color: #ffe6d5;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .header-nav a:hover {
+            border-bottom-color: #ffc857;
+        }
+
+        /* 首屏 hero */
+        .hero {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,40 20,20 40,45 60,15 80,40 100,10 100,100 0,100" fill="%23f2e3d5" opacity="0.3"/></svg>');
+            background-color: #ead9c8;
+            background-size: cover;
+            background-position: center;
+            padding: 70px 0 60px;
+            text-align: center;
+            border-bottom: 4px solid #b3543e;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #5c1a1a;
+            text-shadow: 2px 2px 0 rgba(255,255,255,0.5);
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #4a3020;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            background: rgba(255, 245, 235, 0.7);
+            padding: 10px 20px;
+            border-radius: 30px;
+            display: inline-block;
+            backdrop-filter: blur(2px);
+        }
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+            color: #6b3f2a;
+        }
+        .hero-meta span {
+            background: #fff2e7;
+            padding: 4px 16px;
+            border-radius: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* 导航下内容区 */
+        .content-section {
+            padding: 45px 0;
+        }
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #5c1a1a;
+            margin-bottom: 25px;
+            padding-left: 18px;
+            border-left: 6px solid #b3543e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #d6c0af;
+            margin-left: 10px;
+        }
+
+        /* 剧情卡片 */
+        .plot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 10px;
+        }
+        .plot-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 22px 20px;
+            box-shadow: 0 5px 15px rgba(90, 60, 40, 0.07);
+            border: 1px solid #eee2d8;
+            transition: transform 0.2s ease, box-shadow 0.2s;
+        }
+        .plot-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(90, 60, 40, 0.12);
+        }
+        .plot-card .card-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .plot-card h3 {
+            font-size: 1.25rem;
+            color: #7a2525;
+            margin-bottom: 10px;
+        }
+        .plot-card p {
+            font-size: 0.95rem;
+            color: #5a4a3e;
+        }
+
+        /* 人物表 */
+        .cast-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 18px;
+            margin-top: 10px;
+        }
+        .cast-item {
+            background: #fff7f0;
+            border-radius: 12px;
+            padding: 18px 15px;
+            text-align: center;
+            border: 1px solid #ead5c5;
+            transition: background 0.2s;
+        }
+        .cast-item:hover {
+            background: #fff1e6;
+        }
+        .cast-item .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #c9a88c;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        .cast-item .name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #3a2e2a;
+        }
+        .cast-item .role {
+            font-size: 0.9rem;
+            color: #8b6a55;
+            margin-top: 4px;
+        }
+
+        /* 经典对白 */
+        .quotes-area {
+            background: #f3e4d7;
+            border-radius: 20px;
+            padding: 30px 25px;
+            margin: 20px 0;
+            border-left: 6px solid #9c3d2b;
+        }
+        .quotes-area blockquote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #4a2c1e;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            border-left: 3px solid #c98a6e;
+        }
+        .quotes-area .quote-source {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #7c5c48;
+            margin-bottom: 18px;
+            padding-right: 10px;
+        }
+
+        /* 热议话题 */
+        .topic-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin: 20px 0;
+        }
+        .topic-tag {
+            background: #fff;
+            border: 1px solid #dabea8;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-size: 0.95rem;
+            color: #5c2e1e;
+            cursor: default;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        .topic-tag:hover {
+            background: #b3543e;
+            color: #fff;
+            border-color: #b3543e;
+        }
+
+        /* 幕后花絮两栏 */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .info-panel {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 5px 18px rgba(90, 60, 40, 0.06);
+        }
+        .info-panel h3 {
+            font-size: 1.3rem;
+            color: #7a2525;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f0ded0;
+            padding-bottom: 10px;
+        }
+        .info-panel ul {
+            list-style: none;
+        }
+        .info-panel li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e8d5c6;
+            display: flex;
+            gap: 8px;
+            align-items: baseline;
+            font-size: 0.95rem;
+        }
+        .info-panel li:last-child {
+            border-bottom: none;
+        }
+        .info-panel li::before {
+            content: "▸";
+            color: #b3543e;
+            font-weight: bold;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 900px;
+            margin: 20px auto 0;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border: 1px solid #ead5c5;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .faq-item h3 {
+            font-size: 1.15rem;
+            color: #6b2b1b;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-item h3::before {
+            content: "Q";
+            background: #b3543e;
+            color: #fff;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+        .faq-answer {
+            margin-top: 6px;
+            padding-left: 36px;
+            color: #5a4a3e;
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #3f2222;
+            color: #e6cfc0;
+            padding: 40px 0 30px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .footer-brand h4 {
+            font-size: 1.4rem;
+            color: #f5e3d4;
+            margin-bottom: 8px;
+        }
+        .footer-brand p {
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 50px;
+        }
+        .footer-links h5 {
+            color: #eecfb8;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 6px;
+        }
+        .footer-links a {
+            color: #d4b7a5;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #5d3a3a;
+            padding-top: 20px;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #b99a89;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .header-nav ul {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero .tagline {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+            .footer-links {
+                gap: 30px;
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .cast-list {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+            .plot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <span class="logo-icon">🏮</span>
+                <div class="logo-text">我的野蛮婆婆2
+                    <small>家庭喜剧 · 怀旧剧场</small>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#plot">剧情看点</a></li>
+                    <li><a href="#characters">人物关系</a></li>
+                    <li><a href="#quotes">经典对白</a></li>
+                    <li><a href="#topics">热议话题</a></li>
+                    <li><a href="#behind">幕后花絮</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>我的野蛮婆婆2</h1>
+            <p class="tagline">婆媳过招，笑料百出 · 家庭温情，再度升级</p>
+            <div class="hero-meta">
+                <span>📺 家庭喜剧 / 港剧</span>
+                <span>👨‍👩‍👧 围绕婆媳关系的趣事</span>
+                <span>⭐ 轻松解压首选</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 剧情看点 -->
+        <section class="content-section" id="plot">
+            <div class="container">
+                <h2 class="section-title">📖 剧情看点</h2>
+                <p style="margin-bottom: 30px; max-width: 900px;">《我的野蛮婆婆2》延续了前作轻松幽默的家庭氛围，讲述婆婆与媳妇之间从针锋相对到相互理解的逗趣故事。第二季在原有基础上加入了更多贴近生活的家庭琐事与代际观念碰撞，笑中带暖，令人共鸣。</p>
+                <div class="plot-grid">
+                    <div class="plot-card">
+                        <div class="card-icon">🔥</div>
+                        <h3>婆媳攻防战</h3>
+                        <p>婆婆的“传统”与媳妇的“新潮”不断擦出火花，从育儿方式到家务分配，每一场交锋都充满戏剧性，让人捧腹又感慨。</p>
+                    </div>
+                    <div class="plot-card">
+                        <div class="card-icon">💞</div>
+                        <h3>夹心老公成长记</h3>
+                        <p>作为儿子和丈夫的双重身份，如何在老妈与老婆之间巧妙周旋？剧中男主从笨拙到机智的蜕变，堪称“端水大师”进阶史。</p>
+                    </div>
+                    <div class="plot-card">
+                        <div class="card-icon">🏡</div>
+                        <h3>邻里街坊群像</h3>
+                        <p>除了家庭内部矛盾，邻居与亲戚的频繁登场让剧情更加饱满，各种误会与巧合构成了第二季独有的市井烟火气。</p>
+                    </div>
+                    <div class="plot-card">
+                        <div class="card-icon">🎭</div>
+                        <h3>温情和解线</h3>
+                        <p>每一场“战争”过后，总有一份理解与关怀浮出水面。野蛮只是表象，心底的善良与在乎才是这部剧最动人的底色。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 人物关系 -->
+        <section class="content-section" id="characters" style="background: #f7ede3; padding: 45px 0;">
+            <div class="container">
+                <h2 class="section-title">👥 主要人物与关系</h2>
+                <div class="cast-list">
+                    <div class="cast-item">
+                        <div class="avatar">👵</div>
+                        <div class="name">野蛮婆婆</div>
+                        <div class="role">家中权威 · 刀子嘴豆腐心</div>
+                    </div>
+                    <div class="cast-item">
+                        <div class="avatar">👩</div>
+                        <div class="name">新潮媳妇</div>
+                        <div class="role">独立自主 · 不愿将就</div>
+                    </div>
+                    <div class="cast-item">
+                        <div class="avatar">👨</div>
+                        <div class="name">夹心儿子</div>
+                        <div class="role">丈夫兼孝子 · 左右为难</div>
+                    </div>
+                    <div class="cast-item">
+                        <div class="avatar">👴</div>
+                        <div class="name">公公</div>
+                        <div class="role">和事佬 · 幽默担当</div>
+                    </div>
+                    <div class="cast-item">
+                        <div class="avatar">🧑‍🤝‍🧑</div>
+                        <div class="name">小姑子</div>
+                        <div class="role">古灵精怪 · 气氛调节剂</div>
+                    </div>
+                    <div class="cast-item">
+                        <div class="avatar">👱‍♀️</div>
+                        <div class="name">闺蜜团</div>
+                        <div class="role">媳妇的智囊团</div>
+                    </div>
+                </div>
+                <p style="margin-top: 25px; max-width: 800px;">人物之间的互动构成了全剧的喜剧核心：婆婆与媳妇的明争暗斗、老公的无奈调和、公公的冷幽默助攻……每个角色都立体鲜活，让观众在欢笑中看到自己家庭的影子。</p>
+            </div>
+        </section>
+
+        <!-- 经典对白 -->
+        <section class="content-section" id="quotes">
+            <div class="container">
+                <h2 class="section-title">💬 经典对白回顾</h2>
+                <div class="quotes-area">
+                    <blockquote>“我吃盐多过你吃米，听我的准没错！”</blockquote>
+                    <p class="quote-source">—— 婆婆的口头禅</p>
+                    <blockquote>“妈，时代不同啦，现在流行科学育儿，不流行土方子啦。”</blockquote>
+                    <p class="quote-source">—— 媳妇的无奈反驳</p>
+                    <blockquote>“你们俩一吵架，我就想回公司加班，至少那里没人吵我。”</blockquote>
+                    <p class="quote-source">—— 儿子的“求生欲”发言</p>
+                    <blockquote>“家和万事兴，咱们各退一步，今晚我请大家吃大餐！”</blockquote>
+                    <p class="quote-source">—— 公公的经典调解</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热议话题 -->
+        <section class="content-section" id="topics" style="background: #f7ede3;">
+            <div class="container">
+                <h2 class="section-title">🗨️ 观众热议话题</h2>
+                <div class="topic-wrap">
+                    <span class="topic-tag">#你站婆婆还是媳妇#</span>
+                    <span class="topic-tag">#现实中的婆媳关系#</span>
+                    <span class="topic-tag">#夹心老公怎么当#</span>
+                    <span class="topic-tag">#最搞笑的婆媳过招名场面#</span>
+                    <span class="topic-tag">#这剧治好了我的恐婚#</span>
+                    <span class="topic-tag">#婆婆也是妈#</span>
+                    <span class="topic-tag">#第二季比第一季更精彩吗#</span>
+                    <span class="topic-tag">#假如我也有个野蛮婆婆#</span>
+                </div>
+                <p style="margin-top: 20px; max-width: 800px;">许多观众表示，这部剧虽然夸张，但婆媳之间的真实摩擦与最终的和解让人很有代入感。也有网友分享自己家庭的类似趣事，形成了热烈的讨论氛围。</p>
+            </div>
+        </section>
+
+        <!-- 幕后花絮两栏 -->
+        <section class="content-section" id="behind">
+            <div class="container">
+                <h2 class="section-title">🎬 幕后与周边</h2>
+                <div class="two-col">
+                    <div class="info-panel">
+                        <h3>📝 剧集小档案</h3>
+                        <ul>
+                            <li>剧集类型：家庭 / 喜剧 / 情感</li>
+                            <li>集数：约20-25集（以实际播出为准）</li>
+                            <li>语言：粤语 / 普通话配音</li>
+                            <li>首播平台：港剧频道及网络平台</li>
+                            <li>适合人群：家庭观众、喜剧爱好者</li>
+                        </ul>
+                    </div>
+                    <div class="info-panel">
+                        <h3>🎥 拍摄花絮</h3>
+                        <ul>
+                            <li>剧组透露很多婆媳对手戏都是即兴发挥</li>
+                            <li>婆婆的“野蛮”造型曾参考邻里大妈</li>
+                            <li>拍摄现场笑声不断，演员经常笑场</li>
+                            <li>部分厨房戏份使用了真实食材，NG就被吃掉</li>
+                            <li>导演希望传递“争吵背后是关爱”的理念</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="content-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">❓ 常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>《我的野蛮婆婆2》和第一季有关联吗？</h3>
+                        <p class="faq-answer">第二季可以独立观看，但部分人物背景和关系延续自第一季。建议先看第一季能更好理解人物性格的由来，不过直接看第二季也不会有太大障碍。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>这部剧主要想表达什么？</h3>
+                        <p class="faq-answer">表面上是婆媳之间的矛盾与笑料，内核其实是探讨两代人如何相互理解、包容，以及家庭中沟通的重要性。用轻松的方式呈现现实问题。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>适合全家一起看吗？</h3>
+                        <p class="faq-answer">非常适合。剧中的尺度把握得当，没有过度低俗的笑点，反而有不少让长辈和年轻人都能会心一笑的桥段，是合家欢的选择。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>哪里可以看到这部剧？</h3>
+                        <p class="faq-answer">可以关注各大正版视频平台，搜索剧名即可找到。部分港剧专区或怀旧剧场也会不定期重播，建议通过正规渠道观看。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>剧中的“野蛮”是贬义吗？</h3>
+                        <p class="faq-answer">并非贬义。这里的“野蛮”更多是指性格强势、不轻易让步，但本质上婆婆是出于对家庭的关心。剧集通过夸张手法展现这种性格的可爱之处。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>我的野蛮婆婆2 · 怀旧剧场</h4>
+                    <p>一个分享家庭喜剧、重温经典对白与幕后故事的暖心小站。愿每个家庭都少一点争执，多一点理解。</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h5>栏目导航</h5>
+                        <ul>
+                            <li><a href="#plot">剧情看点</a></li>
+                            <li><a href="#characters">人物关系</a></li>
+                            <li><a href="#quotes">经典对白</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>更多内容</h5>
+                        <ul>
+                            <li><a href="#topics">热议话题</a></li>
+                            <li><a href="#behind">幕后花絮</a></li>
+                            <li><a href="#faq">常见问题</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 我的野蛮婆婆2 影迷交流页面 · 本页为爱好者整理，仅供参考</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+  </html>
