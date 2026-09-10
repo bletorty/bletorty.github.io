@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画之无彩翼漫画少女网站-无彩翼漫画少女专题·高清在线阅读</title>
+    <meta name="description" content="漫画之无彩翼漫画少女网站，专为无彩翼、漫画少女爱好者打造。提供无彩翼漫画少女全集、彩色版、同人推荐、角色设定与常见问题，高清在线免费阅读。">
+    <meta name="keywords" content="无彩翼漫画,漫画少女,无彩翼,少女漫画,无彩翼漫画少女网站,彩色漫画,在线漫画">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+            background: #fff9f2;
+            color: #2e2a26;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部 */
+        .site-header {
+            background: #fff;
+            border-bottom: 2px solid #f7c6d9;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            padding: 16px 0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            line-height: 1;
+            filter: drop-shadow(2px 2px 0 #f7c6d9);
+        }
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #3b2b2b;
+        }
+        .logo-text span {
+            color: #e86f9c;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 24px;
+            font-weight: 500;
+        }
+        .main-nav a {
+            padding: 8px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+            color: #4a3a35;
+        }
+        .main-nav a:hover {
+            border-bottom-color: #e86f9c;
+            color: #d64e7a;
+        }
+        .search-box {
+            display: flex;
+            background: #f9eef2;
+            border-radius: 30px;
+            padding: 4px 4px 4px 16px;
+            border: 1px solid #f3d3df;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 160px;
+            font-size: 0.95rem;
+        }
+        .search-box button {
+            background: #e86f9c;
+            border: none;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .search-box button:hover {
+            background: #d64e7a;
+        }
+
+        /* Hero 首屏 */
+        .hero {
+            background: linear-gradient(135deg, #fce4ec 0%, #ffd9de 100%);
+            margin: 24px 0 32px;
+            border-radius: 32px;
+            padding: 40px 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 1px solid #ffd0da;
+            box-shadow: 0 8px 24px rgba(230, 120, 150, 0.08);
+        }
+        .hero-left {
+            flex: 1 1 350px;
+        }
+        .hero-left h1 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+            color: #4c2f33;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .hero-left h1 i {
+            font-style: normal;
+            color: #e04f7c;
+            background: #fff;
+            padding: 0 8px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: #5e4444;
+            margin: 12px 0 24px;
+            max-width: 520px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: 0.2s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #d64e7a;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(214, 78, 122, 0.2);
+        }
+        .btn-primary:hover {
+            background: #bd3b66;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            border: 1px solid #c9557c;
+            color: #c9557c;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .btn-outline:hover {
+            background: #ffdae4;
+        }
+        .hero-art {
+            flex: 0 0 180px;
+            text-align: center;
+            font-size: 7rem;
+            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.06));
+            transform: rotate(3deg);
+        }
+
+        /* 信息卡片 */
+        .info-panel {
+            background: #fff;
+            border-radius: 24px;
+            padding: 28px 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.02);
+            border: 1px solid #f6e2e9;
+        }
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-title::before {
+            content: "✦";
+            color: #e86f9c;
+            font-size: 1.8rem;
+        }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .card-item {
+            background: #fdf6f8;
+            border-radius: 18px;
+            padding: 18px;
+            transition: 0.2s;
+            border: 1px solid #f8e0e8;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-item:hover {
+            transform: translateY(-4px);
+            background: #fff;
+            box-shadow: 0 12px 24px rgba(160, 80, 100, 0.08);
+        }
+        .card-icon {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #3b2b2b;
+        }
+        .card-text {
+            color: #5c4a4a;
+            font-size: 0.95rem;
+            flex: 1;
+        }
+        .tag-group {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag {
+            background: #ffe4ec;
+            border-radius: 30px;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            color: #a8335c;
+            font-weight: 500;
+        }
+
+        /* 特色阅读区 */
+        .feature-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0 40px;
+        }
+        .feature-main {
+            flex: 3 1 300px;
+            background: #fff;
+            border-radius: 24px;
+            padding: 24px;
+            border: 1px solid #f1d7e0;
+        }
+        .feature-side {
+            flex: 2 1 220px;
+            background: #fdf0f3;
+            border-radius: 24px;
+            padding: 24px;
+            border: 1px solid #f6d3de;
+        }
+        .episode-list {
+            margin-top: 18px;
+        }
+        .episode-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ecc7d4;
+            font-size: 0.95rem;
+        }
+        .episode-item:last-child {
+            border-bottom: none;
+        }
+        .episode-item span:first-child {
+            font-weight: 600;
+        }
+        .episode-item .vol {
+            background: #e86f9c;
+            color: #fff;
+            border-radius: 30px;
+            padding: 2px 12px;
+            font-size: 0.8rem;
+        }
+        .btn-small {
+            background: transparent;
+            border: 1px solid #e86f9c;
+            color: #d64e7a;
+            border-radius: 30px;
+            padding: 4px 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-small:hover {
+            background: #e86f9c;
+            color: #fff;
+        }
+
+        /* FAQ */
+        .faq-block {
+            background: #fff;
+            border-radius: 24px;
+            padding: 28px 30px;
+            margin: 40px 0 20px;
+            border: 1px solid #f6e2e9;
+        }
+        details {
+            border-bottom: 1px solid #f0d5df;
+            padding: 14px 0;
+        }
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #4a3035;
+        }
+        summary::before {
+            content: "❓";
+            font-size: 1.2rem;
+            color: #e86f9c;
+        }
+        .faq-answer {
+            padding: 12px 24px 4px;
+            color: #4f3f3f;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #f9eef2;
+            border-radius: 30px 30px 0 0;
+            margin-top: 50px;
+            padding: 30px 20px;
+            text-align: center;
+            color: #6b5454;
+            border-top: 1px solid #efd6df;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #d64e7a;
+        }
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 14px;
+            }
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 14px;
+            }
+            .hero {
+                padding: 28px 20px;
+            }
+            .hero-left h1 {
+                font-size: 2rem;
+            }
+            .hero-art {
+                font-size: 5rem;
+            }
+            .grid-cards {
+                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            }
+        }
+        @media (max-width: 480px) {
+            .search-box input {
+                width: 100px;
+            }
+            .container {
+                padding: 0 12px;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">🕊️</div>
+                <div class="logo-text">漫画之<span>无彩翼</span>少女</div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">漫画目录</a></li>
+                    <li><a href="#">彩色版</a></li>
+                    <li><a href="#">角色</a></li>
+                    <li><a href="#">同人</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索无彩翼…" aria-label="搜索漫画">
+                <button type="button">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 首屏 hero -->
+        <section class="hero">
+            <div class="hero-left">
+                <h1>无彩翼漫画少女 <i>专题站</i></h1>
+                <p class="hero-desc">收录《无彩翼》系列、少女漫画全彩重制、设定画集与同人精选。为喜欢无彩翼与梦幻少女故事的读者提供沉浸式阅读。</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">📖 开始阅读</a>
+                    <a href="#" class="btn btn-outline">🎨 彩色版图库</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">🎀👧🏻</div>
+        </section>
+
+        <!-- 概念与导航卡片 -->
+        <div class="info-panel">
+            <h2 class="section-title">无彩翼·少女宇宙导航</h2>
+            <div class="grid-cards">
+                <div class="card-item">
+                    <div class="card-icon">📘</div>
+                    <div class="card-title">原作漫画</div>
+                    <div class="card-text">无彩翼主章剧情，全章节收录。少女失去色彩后遇见神秘翼之守护者，逐步找回情感与颜色。</div>
+                    <div class="tag-group"><span class="tag">全彩</span><span class="tag">连载中</span></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-icon">🌸</div>
+                    <div class="card-title">漫画少女·别册</div>
+                    <div class="card-text">收录角色番外、学园祭篇、if线，更多少女日常与治愈故事。</div>
+                    <div class="tag-group"><span class="tag">番外</span><span class="tag">短篇</span></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-icon">🖌️</div>
+                    <div class="card-title">无彩翼·原画设定</div>
+                    <div class="card-text">翼少女们的人设图、线稿、色彩设定与创作访谈，感受无彩翼美学。</div>
+                    <div class="tag-group"><span class="tag">设定集</span><span class="tag">画集</span></div>
+                </div>
+                <div class="card-item">
+                    <div class="card-icon">💬</div>
+                    <div class="card-title">同人社区精选</div>
+                    <div class="card-text">读者创作的漫画少女同人、短漫与插图，不定期更新。</div>
+                    <div class="tag-group"><span class="tag">同人</span><span class="tag">投稿</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 阅读区 / 最新话 + 彩色重制 -->
+        <div class="feature-row">
+            <div class="feature-main">
+                <h3 class="section-title" style="font-size: 1.4rem;">📚 最近更新</h3>
+                <div class="episode-list">
+                    <div class="episode-item">
+                        <span>第24话 · 翼之记忆</span>
+                        <span class="vol">新</span>
+                    </div>
+                    <div class="episode-item">
+                        <span>第23话 · 无色之梦</span>
+                        <span class="vol">热门</span>
+                    </div>
+                    <div class="episode-item">
+                        <span>第22话 · 少女与约定</span>
+                        <span class="vol">推荐</span>
+                    </div>
+                    <div class="episode-item">
+                        <span>特别篇 · 樱色翼</span>
+                        <span class="vol">彩</span>
+                    </div>
+                    <div class="episode-item">
+                        <span>第21话 · 失去颜色的那天</span>
+                        <span class="vol">经典</span>
+                    </div>
+                </div>
+                <button class="btn-small" style="margin-top: 18px;">查看全部章节</button>
+            </div>
+            <div class="feature-side">
+                <h3 style="font-size: 1.3rem; margin-bottom: 10px;">🎨 彩色重制企划</h3>
+                <p style="font-size: 0.95rem; color:#5a4242;">“无彩翼”官方彩色版重制进行中。由翼少女项目组监修，追加光影、特效与背景细节。</p>
+                <div style="background:#ffdbe6; padding: 12px; border-radius: 18px; margin-top: 16px; font-size: 0.9rem;">
+                    <p>✨ 现已上线第1-8话全彩版</p>
+                    <p>💖 每周六更新彩色版</p>
+                </div>
+                <a href="#" class="btn btn-outline" style="margin-top: 16px; display:inline-block;">进入彩色版</a>
+            </div>
+        </div>
+
+        <!-- 角色与世界观 -->
+        <div class="info-panel">
+            <h2 class="section-title">无彩翼 · 漫画少女图鉴</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+                <div style="flex: 1 1 180px; text-align: center; background: #ffeef3; border-radius: 24px; padding: 16px;">
+                    <div style="font-size: 3.5rem;">🕊️</div>
+                    <h4>白翼 · 小鸠</h4>
+                    <p style="font-size:0.9rem;">“失去色彩却拥有透明翅膀的少女”</p>
+                    <div class="tag-group" style="justify-content: center;"><span class="tag">主角</span></div>
+                </div>
+                <div style="flex: 1 1 180px; text-align: center; background: #f0f4ff; border-radius: 24px; padding: 16px;">
+                    <div style="font-size: 3.5rem;">🌙</div>
+                    <h4>月咏 · 翼</h4>
+                    <p style="font-size:0.9rem;">“知晓翼秘密的神秘守护者”</p>
+                    <div class="tag-group" style="justify-content: center;"><span class="tag">重要角色</span></div>
+                </div>
+                <div style="flex: 1 1 180px; text-align: center; background: #f9f0e6; border-radius: 24px; padding: 16px;">
+                    <div style="font-size: 3.5rem;">🎐</div>
+                    <h4>铃音</h4>
+                    <p style="font-size:0.9rem;">“喜欢画画的无翼少女”</p>
+                    <div class="tag-group" style="justify-content: center;"><span class="tag">漫画少女</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 使用场景+阅读指南 -->
+        <div class="feature-row" style="margin-top: 10px;">
+            <div style="flex:1 1 280px; background:#fff; border-radius: 20px; padding: 22px; border:1px solid #f4d9e2;">
+                <h3>🖋️ 无彩翼阅读指南</h3>
+                <ul style="margin-top: 12px; padding-left: 6px;">
+                    <li style="margin-bottom: 10px;">① 从「第1话 无色世界」开始，了解世界观。</li>
+                    <li style="margin-bottom: 10px;">② 彩色版适合快速重温剧情，画面更细腻。</li>
+                    <li style="margin-bottom: 10px;">③ 番外篇可单独阅读，不影响主线。</li>
+                    <li>④ 利用搜索框快速查找章节。</li>
+                </ul>
+            </div>
+            <div style="flex:1 1 280px; background:#fff; border-radius: 20px; padding: 22px; border:1px solid #f4d9e2;">
+                <h3>💡 如何收藏与追更</h3>
+                <p style="color:#4f3f3f; margin-top: 8px;">注册/登录后即可收藏漫画，开启更新提醒。每周双更（周三、周六）。</p>
+                <p style="background: #f5e5eb; border-radius: 30px; padding: 8px 16px; margin-top: 14px;">当前进度：无彩翼第24话已发布</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-block">
+            <h2 class="section-title">常见问题</h2>
+            <details open>
+                <summary>无彩翼漫画少女是什么类型的漫画？</summary>
+                <div class="faq-answer">主打奇幻、治愈、少女成长。讲述失去色彩感知的少女与翼之守护者相遇，逐渐找回情感与色彩的故事。画风柔美，角色细腻。</div>
+            </details>
+            <details>
+                <summary>网站提供彩色版吗？</summary>
+                <div class="faq-answer">是的，官方彩色重制版正在连载更新，目前第1-8话全彩。彩色版保留原线稿并重新上色，阅读体验更佳。</div>
+            </details>
+            <details>
+                <summary>需要付费吗？</summary>
+                <div class="faq-answer">本站目前全部漫画内容免费阅读。部分同人特典可能需要积分，但基础阅读无限制。</div>
+            </details>
+            <details>
+                <summary>如何下载漫画？</summary>
+                <div class="faq-answer">为尊重创作者，本站不提供下载功能。支持在线高清阅读，也建议支持正版单行本。</div>
+            </details>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">作品投稿</a>
+                <a href="#">版权声明</a>
+                <a href="#">帮助中心</a>
+                <a href="#">联系方式</a>
+            </div>
+            <p class="copyright">© 2025 漫画之无彩翼漫画少女网站 · 献给所有喜欢漫画少女的你</p>
+            <p style="font-size:0.75rem;">本站内容仅供学习交流，为同人爱好者建立。</p>
+        </div>
+    </footer>
+</body>
+</html>
